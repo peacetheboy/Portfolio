@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    background: url(pic/Black_geometry.avif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    margin: 0px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+ul{
+    margin-top: -4%;
+}
+Ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: -3%;
+}
+
+ul li a:hover{
+    color: rgb(55, 0, 255);
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1{
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+}
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.info span{
+    color: rgb(55, 0, 255);
+}
+
+.info a{
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    margin: 26px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(55, 0, 255);
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .me{
+    left: 55%;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.icons ion-icon{
+    margin-left: 7%;
+    color: #ffffff;
+    margin-right: -60px;
+    font-size: 40px;
+    transition: .4s ease;
+
+}
+
+.icons ion-icon:hover{
+    color: rgb(55, 0, 255);
+
+}
+/*------------About pagege------------*/
+.about{
+    width: 100%; 
+    padding: 85px 0;
+    background: #080808;
+    
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #080808;
+    padding: 15px 0;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(55, 0, 255);
+    color: white;
+}
+.topnav a.active {
+    background-color: rgb(55, 0, 255);
+    color: white;
+}
+
+.topnav-right {
+   float: right;
+}
+.row {
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;   
+
+}
+
+.about-col-1 img{
+    width: 100%;
+    height: 100%;
+    transform: translate(15%);
+    transition: left 2s ease;
+
+}
+
+.about-col-1:hover .tech{
+    left: 55%;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(55, 0, 255);
+}
+
+.subtext{
+    font-size: 14px;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    color: #fff;
+    margin-right: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(55, 0, 255);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 12px 0;
+    color: #fff;
+}
+
+.tab-contents ul li span{
+    color: rgb(55, 0, 255);
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*------------Services page------------*/
+.services{
+    width: 100%; 
+    background: #080808;
+    background-size: cover;
+    
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #080808;
+    padding: 15px 0;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(55, 0, 255);
+    color: white;
+}
+.topnav a.active {
+    background-color: rgb(55, 0, 255);
+    color: white;
+}
+
+.topnav-right {
+   float: right;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+}
+
+.container h1{
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.container h1::after{
+    content: '';
+    background: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.service{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.service i{
+    font-size: 40px;
+    margin-top: 10px;
+    color: #303ef7;
+}
+
+.service h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.service:hover{
+    background: #303ef7;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.service:hover i{
+    color: #ffff;
+}

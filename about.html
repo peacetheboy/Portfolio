@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ABOUT</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="topnav">
+            <div class="topnav-right">
+              <a  href="index.html">Home</a>
+              <a class="active" href="about.html">ABOUT</a>
+              <a href="skills">SKILLS</a>  
+              <a href="services.html">SERVICES</a>
+              <a href="contact">CONTACT</a>
+            </div>
+          </div>
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="pic/me.png" class="tech">
+                    </div>
+                    <div class="about-col-2">
+                        <h4 class="subtitle">About me</h4>
+                        <p class="subtext">I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing</li><br>
+                                <li><span>Web Development</span><br>Websites</li><br>
+                                <li><span>Graphic Design</span><br>Photoshop/Canva</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2020 - Current</span><br>BSC IT at Northwest University</li><br>
+                                <li><span>2023 - Current</span><br>Software engineering at ALX</li><br>
+                                <li><span>2019 - Current</span><br>Graphic design</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2007-2012</span><br>Tshivhazwaulu primary school</li><br>
+                                <li><span>2013 - 2019</span><br>Kolokoshani Combined</li><br>
+                                <li><span>2020 - Current</span><br>Northwest University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------services------------------------>       
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+    </body>
+</html>
